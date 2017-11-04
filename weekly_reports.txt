@@ -9,7 +9,8 @@
     a.
   
   Mark:
-    a.
+    a. Researched microcontrollers to use.
+    b. Explored accelerometer options in terms of which is easiest to interface with chosen microcontrollers.
   
   Tapas:
     a. Explored methods of power delivery (zener voltage regulators/voltage divider/voltage regulator chip) and concluded that we will use buck converters because of their efficiency, and because they're cool
@@ -21,22 +22,32 @@
     b. Looked into chassis and motor driver ic. 
 
 
-10/16/17 - 10/23/17
+10/16/17 - 10/22/17
 
 Team:
-a. Worked on preliminary schematic using Eaglecad on 10/14/17
-b. Parts are orderd (on 10/14/17) and arrived.
-c. Decided not to use PIC on the receiver side and voltage regulators (L7805 and LM1115) to drop down 9V to 5V and 3.3V, respectively. 
+  a. Worked on preliminary schematic using Eaglecad on 10/14/17
+  b. Parts are orderd (on 10/14/17) and arrived.
+  c. Decided not to use PIC on the receiver side and voltage regulators (L7805 and LM1115) to drop down 9V to 5V and 3.3V, respectively. 
 
 Gomathy:
-Mark:
+  a.
+  
+Mark: 
+  a. Ordered accelerometer, transmitter/reciever pair, and motor drivers
+  b. Explored options to program the Atmeg328 microcontroller.
+  
 Tapas:
 Yebin:
 a. Worked on the preliminary schematic using Eaglecad. Board layout hasn't been done yet.
 
-10/24/17 - 10/31/17
+10/23/17 - 10/29/17
 Team:
+
 Gomathy:
+
+Mark:
+a. Editted reciever preliminary schematic.
+
 Tapas:
 Yebin:
 a.
