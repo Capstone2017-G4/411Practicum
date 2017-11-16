@@ -6028,9 +6028,9 @@ Marquardt</description>
 </class>
 </classes>
 <parts>
-<part name="IC1" library="holtek" deviceset="HT12D" device="&quot;"/>
-<part name="M1" library="diy-modules" deviceset="WIRELESS-XY-MK-5V" device="-V"/>
-<part name="IC2" library="st-microelectronics" library_urn="urn:adsk.eagle:library:368" deviceset="L293D" device="" package3d_urn="urn:adsk.eagle:package:26820/1"/>
+<part name="DECODER" library="holtek" deviceset="HT12D" device="&quot;"/>
+<part name="433MHZ_RX" library="diy-modules" deviceset="WIRELESS-XY-MK-5V" device="-V"/>
+<part name="DRIVER_IC" library="st-microelectronics" library_urn="urn:adsk.eagle:library:368" deviceset="L293D" device="" package3d_urn="urn:adsk.eagle:package:26820/1"/>
 <part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" value="47k"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -6057,31 +6057,31 @@ Marquardt</description>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="MOTOR1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="MOTOR2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="C1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" value="0.1u"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="C2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" value="10u"/>
 <part name="C3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" value="10u"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="IC3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="78*" device="T" technology="05"/>
+<part name="V_REG" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="78*" device="T" technology="05"/>
 <part name="S1" library="switch" library_urn="urn:adsk.eagle:library:380" deviceset="M9040P" device="" package3d_urn="urn:adsk.eagle:package:27676/1"/>
 <part name="9V" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="124.46" y="142.24" size="1.778" layer="91">HT12D Decoder</text>
-<text x="236.22" y="127" size="1.778" layer="91">L293D Driver IC </text>
-<text x="33.02" y="93.98" size="1.778" layer="91">433MHz Receiver </text>
-<text x="185.42" y="20.32" size="1.778" layer="91">Receiver side of Hand Gesture controlled Robot (Team 4)</text>
-<text x="58.42" y="162.56" size="1.778" layer="91">Power Supply </text>
+<text x="185.42" y="17.78" size="2.54" layer="97">Receiver Side of Hand Gesture Controlled Robot </text>
+<text x="177.8" y="25.4" size="2.54" layer="97">TEAM 4
+Gomathy Krishna, Mark Kaldas, Tapas Sastry, Yebin Woo</text>
+<text x="205.74" y="10.16" size="2.54" layer="97">Ver.2</text>
+<text x="182.88" y="0" size="2.54" layer="97">11/16/17</text>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="121.92" y="119.38"/>
-<instance part="M1" gate="G$1" x="55.88" y="109.22"/>
-<instance part="IC2" gate="G$1" x="215.9" y="114.3" rot="R270"/>
+<instance part="DECODER" gate="G$1" x="121.92" y="119.38"/>
+<instance part="433MHZ_RX" gate="G$1" x="55.88" y="109.22"/>
+<instance part="DRIVER_IC" gate="G$1" x="215.9" y="114.3" rot="R270"/>
 <instance part="R1" gate="G$1" x="127" y="96.52" rot="MR180"/>
 <instance part="SUPPLY3" gate="GND" x="101.6" y="86.36"/>
 <instance part="SUPPLY4" gate="GND" x="241.3" y="144.78"/>
@@ -6111,15 +6111,15 @@ Marquardt</description>
 <instance part="SUPPLY8" gate="GND" x="157.48" y="73.66"/>
 <instance part="SUPPLY1" gate="GND" x="38.1" y="129.54"/>
 <instance part="P+1" gate="1" x="81.28" y="160.02"/>
-<instance part="JP1" gate="G$1" x="218.44" y="176.53" rot="R90"/>
-<instance part="JP2" gate="G$1" x="215.9" y="59.69" rot="R270"/>
+<instance part="MOTOR1" gate="G$1" x="218.44" y="176.53" rot="R90"/>
+<instance part="MOTOR2" gate="G$1" x="215.9" y="59.69" rot="R270"/>
 <instance part="C1" gate="G$1" x="93.98" y="101.6"/>
 <instance part="P+2" gate="1" x="93.98" y="132.08"/>
 <instance part="P+5" gate="1" x="246.38" y="114.3"/>
 <instance part="C2" gate="G$1" x="50.8" y="144.78"/>
 <instance part="C3" gate="G$1" x="81.28" y="144.78"/>
 <instance part="SUPPLY9" gate="GND" x="93.98" y="86.36"/>
-<instance part="IC3" gate="A1" x="60.96" y="152.4"/>
+<instance part="V_REG" gate="A1" x="60.96" y="152.4"/>
 <instance part="S1" gate="1" x="43.18" y="157.48" rot="R270"/>
 <instance part="9V" gate="G$1" x="30.48" y="147.32" rot="R180"/>
 </instances>
@@ -6129,10 +6129,10 @@ Marquardt</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<pinref part="IC1" gate="G$1" pin="A0"/>
+<pinref part="DECODER" gate="G$1" pin="A0"/>
 <wire x1="104.14" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="129.54" x2="101.6" y2="127" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A1"/>
+<pinref part="DECODER" gate="G$1" pin="A1"/>
 <wire x1="101.6" y1="127" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="124.46" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="121.92" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
@@ -6143,39 +6143,39 @@ Marquardt</description>
 <wire x1="101.6" y1="96.52" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="127" x2="101.6" y2="127" width="0.1524" layer="91"/>
 <junction x="101.6" y="127"/>
-<pinref part="IC1" gate="G$1" pin="A2"/>
+<pinref part="DECODER" gate="G$1" pin="A2"/>
 <wire x1="104.14" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
 <junction x="101.6" y="124.46"/>
-<pinref part="IC1" gate="G$1" pin="A3"/>
+<pinref part="DECODER" gate="G$1" pin="A3"/>
 <wire x1="104.14" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <junction x="101.6" y="121.92"/>
-<pinref part="IC1" gate="G$1" pin="A4"/>
+<pinref part="DECODER" gate="G$1" pin="A4"/>
 <wire x1="104.14" y1="119.38" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
 <junction x="101.6" y="119.38"/>
-<pinref part="IC1" gate="G$1" pin="A5"/>
+<pinref part="DECODER" gate="G$1" pin="A5"/>
 <wire x1="104.14" y1="116.84" x2="101.6" y2="116.84" width="0.1524" layer="91"/>
 <junction x="101.6" y="116.84"/>
-<pinref part="IC1" gate="G$1" pin="A6"/>
+<pinref part="DECODER" gate="G$1" pin="A6"/>
 <wire x1="104.14" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
 <junction x="101.6" y="114.3"/>
-<pinref part="IC1" gate="G$1" pin="A7"/>
+<pinref part="DECODER" gate="G$1" pin="A7"/>
 <wire x1="104.14" y1="111.76" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
 <junction x="101.6" y="111.76"/>
-<pinref part="IC1" gate="G$1" pin="VSS"/>
+<pinref part="DECODER" gate="G$1" pin="VSS"/>
 <wire x1="111.76" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
 <junction x="101.6" y="96.52"/>
 <wire x1="71.12" y1="119.38" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="M1" gate="G$1" pin="GND"/>
+<pinref part="433MHZ_RX" gate="G$1" pin="GND"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="139.7" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
 <junction x="101.6" y="129.54"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="GND2"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="GND2"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <wire x1="213.36" y1="129.54" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="129.54" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="GND1"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="GND1"/>
 <wire x1="215.9" y1="147.32" x2="241.3" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="129.54" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
 <junction x="215.9" y="129.54"/>
@@ -6184,9 +6184,9 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<pinref part="IC2" gate="G$1" pin="GND3"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="GND3"/>
 <wire x1="218.44" y1="99.06" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="GND4"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="GND4"/>
 <wire x1="218.44" y1="96.52" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="99.06" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="96.52" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
@@ -6225,7 +6225,7 @@ Marquardt</description>
 <wire x1="81.28" y1="139.7" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="144.78" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
 <junction x="60.96" y="134.62"/>
-<pinref part="IC3" gate="A1" pin="GND"/>
+<pinref part="V_REG" gate="A1" pin="GND"/>
 <pinref part="9V" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="144.78" x2="38.1" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="144.78" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
@@ -6239,28 +6239,28 @@ Marquardt</description>
 </net>
 <net name="DIN" class="0">
 <segment>
-<pinref part="M1" gate="G$1" pin="DATA.1"/>
+<pinref part="433MHZ_RX" gate="G$1" pin="DATA.1"/>
 <wire x1="71.12" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <label x="81.28" y="116.84" size="1.778" layer="95" xref="yes"/>
-<pinref part="M1" gate="G$1" pin="DATA.2"/>
+<pinref part="433MHZ_RX" gate="G$1" pin="DATA.2"/>
 <wire x1="76.2" y1="116.84" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="114.3" x2="71.12" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="114.3" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <junction x="76.2" y="116.84"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(DIN)TE"/>
+<pinref part="DECODER" gate="G$1" pin="(DIN)TE"/>
 <wire x1="139.7" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
 <label x="142.24" y="124.46" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="D8"/>
+<pinref part="DECODER" gate="G$1" pin="D8"/>
 <wire x1="139.7" y1="111.76" x2="177.8" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="111.76" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="111.76" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="3A"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="3A"/>
 <wire x1="185.42" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="96.52" x2="203.2" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -6270,11 +6270,11 @@ Marquardt</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="D9"/>
+<pinref part="DECODER" gate="G$1" pin="D9"/>
 <wire x1="139.7" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="114.3" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="114.3" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="4A"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="4A"/>
 <wire x1="187.96" y1="93.98" x2="228.6" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="93.98" x2="228.6" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -6284,12 +6284,12 @@ Marquardt</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="D10"/>
+<pinref part="DECODER" gate="G$1" pin="D10"/>
 <wire x1="139.7" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="116.84" x2="190.5" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="116.84" x2="190.5" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="2A"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="2A"/>
 <wire x1="203.2" y1="132.08" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="93.98" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
@@ -6298,9 +6298,9 @@ Marquardt</description>
 </net>
 <net name="-RIGHT" class="2">
 <segment>
-<pinref part="IC2" gate="G$1" pin="3Y"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="3Y"/>
 <wire x1="208.28" y1="99.06" x2="208.28" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="MOTOR2" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="68.58" x2="215.9" y2="62.23" width="0.1524" layer="91"/>
 <label x="208.28" y="71.12" size="1.778" layer="95" rot="R90"/>
@@ -6308,9 +6308,9 @@ Marquardt</description>
 </net>
 <net name="+RIGHT" class="2">
 <segment>
-<pinref part="IC2" gate="G$1" pin="4Y"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="4Y"/>
 <wire x1="223.52" y1="99.06" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="MOTOR2" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="68.58" x2="218.44" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="68.58" x2="218.44" y2="62.23" width="0.1524" layer="91"/>
 <label x="223.52" y="71.12" size="1.778" layer="95" rot="R90"/>
@@ -6318,22 +6318,22 @@ Marquardt</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="OSC1"/>
+<pinref part="DECODER" gate="G$1" pin="OSC1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="OSC2"/>
+<pinref part="DECODER" gate="G$1" pin="OSC2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-LEFT" class="2">
 <segment>
-<pinref part="IC2" gate="G$1" pin="2Y"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="2Y"/>
 <wire x1="208.28" y1="129.54" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="MOTOR1" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="167.64" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="167.64" x2="215.9" y2="173.99" width="0.1524" layer="91"/>
 <label x="208.28" y="160.02" size="1.778" layer="95" rot="R90"/>
@@ -6344,7 +6344,7 @@ Marquardt</description>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="104.14" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="M1" gate="G$1" pin="VCC"/>
+<pinref part="433MHZ_RX" gate="G$1" pin="VCC"/>
 <wire x1="93.98" y1="111.76" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <junction x="93.98" y="111.76"/>
@@ -6353,7 +6353,7 @@ Marquardt</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="81.28" y1="147.32" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A1" pin="VO"/>
+<pinref part="V_REG" gate="A1" pin="VO"/>
 <wire x1="81.28" y1="152.4" x2="81.28" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
 <junction x="81.28" y="152.4"/>
@@ -6362,7 +6362,7 @@ Marquardt</description>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="147.32" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
+<pinref part="DECODER" gate="G$1" pin="VDD"/>
 <wire x1="121.92" y1="149.86" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="121.92" y1="149.86" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
@@ -6370,12 +6370,12 @@ Marquardt</description>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<pinref part="IC2" gate="G$1" pin="1-2EN"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="1-2EN"/>
 <wire x1="233.68" y1="144.78" x2="233.68" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="144.78" x2="198.12" y2="154.94" width="0.1524" layer="91"/>
 <junction x="198.12" y="144.78"/>
-<pinref part="IC2" gate="G$1" pin="VCC2"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="VCC2"/>
 <wire x1="198.12" y1="154.94" x2="198.12" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="129.54" x2="198.12" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -6386,10 +6386,10 @@ Marquardt</description>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <wire x1="246.38" y1="99.06" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="VCC1"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="VCC1"/>
 <wire x1="233.68" y1="99.06" x2="246.38" y2="99.06" width="0.1524" layer="91"/>
 <junction x="246.38" y="99.06"/>
-<pinref part="IC2" gate="G$1" pin="3-4EN"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="3-4EN"/>
 <wire x1="198.12" y1="99.06" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="81.28" x2="233.68" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="81.28" x2="233.68" y2="99.06" width="0.1524" layer="91"/>
@@ -6422,12 +6422,12 @@ Marquardt</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="D11"/>
+<pinref part="DECODER" gate="G$1" pin="D11"/>
 <wire x1="139.7" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="119.38" x2="187.96" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="119.38" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="134.62" x2="228.6" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="1A"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="1A"/>
 <wire x1="228.6" y1="134.62" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="93.98" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
@@ -6439,16 +6439,16 @@ Marquardt</description>
 <wire x1="48.26" y1="152.4" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="152.4" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A1" pin="VI"/>
+<pinref part="V_REG" gate="A1" pin="VI"/>
 <junction x="50.8" y="152.4"/>
 <pinref part="S1" gate="1" pin="S"/>
 </segment>
 </net>
 <net name="+LEFT" class="2">
 <segment>
-<pinref part="IC2" gate="G$1" pin="1Y"/>
+<pinref part="DRIVER_IC" gate="G$1" pin="1Y"/>
 <wire x1="223.52" y1="129.54" x2="223.52" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="MOTOR1" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="167.64" x2="218.44" y2="173.99" width="0.1524" layer="91"/>
 <label x="223.52" y="160.02" size="1.778" layer="95" rot="R90"/>
@@ -6466,16 +6466,31 @@ Marquardt</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="110,1,17.78,-7.62,N$8,N$3,,,,"/>
-<approved hash="110,1,17.78,-5.08,N$8,N$6,,,,"/>
-<approved hash="110,1,17.78,-2.54,N$8,N$7,,,,"/>
-<approved hash="111,1,17.78,-7.62,N$8,,,,,"/>
-<approved hash="111,1,17.78,-5.08,N$8,,,,,"/>
-<approved hash="111,1,17.78,-2.54,N$8,,,,,"/>
+<approved hash="102,1,111.76,96.52,VSS,GND,,,,"/>
+<approved hash="104,1,121.92,144.78,IC1,VDD,+5V,,,"/>
+<approved hash="104,1,218.44,129.54,IC2,GND1,GND,,,"/>
+<approved hash="104,1,213.36,129.54,IC2,GND2,GND,,,"/>
+<approved hash="104,1,198.12,129.54,IC2,VCC2,+5V,,,"/>
+<approved hash="104,1,233.68,99.06,IC2,VCC1,+5V,,,"/>
+<approved hash="104,1,218.44,99.06,IC2,GND3,GND,,,"/>
+<approved hash="104,1,213.36,99.06,IC2,GND4,GND,,,"/>
+<approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
+<approved hash="113,1,165.585,80.01,D1,,,,,"/>
+<approved hash="113,1,175.745,80.01,D2,,,,,"/>
+<approved hash="113,1,145.265,80.01,D3,,,,,"/>
+<approved hash="113,1,155.425,80.01,D4,,,,,"/>
+<approved hash="113,1,215.674,174.227,JP1,,,,,"/>
+<approved hash="113,1,218.666,61.9929,JP2,,,,,"/>
+<approved hash="113,1,43.18,158.455,S1,,,,,"/>
+<approved hash="113,1,32.7829,144.554,9V,,,,,"/>
 </errors>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6916,17 +6916,17 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 </class>
 </classes>
 <parts>
-<part name="U1" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_PDIP" device="" package3d_urn="urn:adsk.eagle:package:38942/1" value="328P"/>
-<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="T" package3d_urn="urn:adsk.eagle:package:16414/1" technology="05"/>
-<part name="IC2" library="burr-brown" library_urn="urn:adsk.eagle:library:111" deviceset="REG1117" device="" package3d_urn="urn:adsk.eagle:package:4940/1"/>
+<part name="ATMEGA_328" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_PDIP" device="" package3d_urn="urn:adsk.eagle:package:38942/1" value="328P"/>
+<part name="V_REG_5" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78*" device="T" package3d_urn="urn:adsk.eagle:package:16414/1" technology="05"/>
+<part name="V_REG_3.3" library="burr-brown" library_urn="urn:adsk.eagle:library:111" deviceset="REG1117" device="" package3d_urn="urn:adsk.eagle:package:4940/1"/>
 <part name="C1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" value="10u"/>
 <part name="C2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" value="10u"/>
 <part name="C3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" value="22p"/>
 <part name="C4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" value="22p"/>
 <part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0805" value="1M"/>
-<part name="IC3" library="holtek" deviceset="HT12E" device="&quot;"/>
-<part name="M2" library="diy-modules" deviceset="WIRELESS-XY-FST#V" device=""/>
+<part name="ENCODER" library="holtek" deviceset="HT12E" device="&quot;"/>
+<part name="433HMZ_TX" library="diy-modules" deviceset="WIRELESS-XY-FST#V" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -6954,7 +6954,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <part name="U$16" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="ISP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="AVRISP" device="-6"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="BATTERY" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
@@ -6980,25 +6980,24 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <sheets>
 <sheet>
 <plain>
-<text x="63.5" y="-100.33" size="1.778" layer="97">Transmitter of Hand Gesture Controlled Robot (Team 4)</text>
-<text x="-106.68" y="34.29" size="1.778" layer="97">Battery </text>
-<text x="-7.62" y="-38.1" size="1.778" layer="97">Atmel Atmega 328</text>
-<text x="102.87" y="43.18" size="1.778" layer="97">433MHzTransmitter</text>
-<text x="92.71" y="-3.81" size="1.778" layer="97">HT12E Encoder</text>
-<text x="44.45" y="48.26" size="1.778" layer="97">3.3V V-Reg</text>
+<text x="63.5" y="-100.33" size="2.54" layer="97">Transmitter Side of Hand Gesture Controlled Robot </text>
+<text x="53.34" y="-93.98" size="2.54" layer="97">TEAM 4
+Gomathy Krishna, Mark Kaldas, Tapas Sastry, Yebin Woo</text>
+<text x="83.82" y="-109.22" size="2.54" layer="97">Ver.2</text>
+<text x="63.5" y="-119.38" size="2.54" layer="97">11/16/17</text>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="0" y="0"/>
-<instance part="IC1" gate="A1" x="-81.28" y="52.07"/>
-<instance part="IC2" gate="G$1" x="54.61" y="41.91" rot="MR0"/>
+<instance part="ATMEGA_328" gate="G$1" x="0" y="0"/>
+<instance part="V_REG_5" gate="A1" x="-81.28" y="52.07"/>
+<instance part="V_REG_3.3" gate="G$1" x="54.61" y="41.91" rot="MR0"/>
 <instance part="C1" gate="G$1" x="-101.6" y="46.99"/>
 <instance part="C2" gate="G$1" x="-68.58" y="46.99"/>
 <instance part="C3" gate="G$1" x="-73.66" y="-15.24"/>
 <instance part="C4" gate="G$1" x="-53.34" y="-15.24"/>
 <instance part="R1" gate="G$1" x="-29.21" y="25.4" rot="R180"/>
 <instance part="R2" gate="G$1" x="-53.34" y="-3.81" rot="R90"/>
-<instance part="IC3" gate="G$1" x="91.44" y="-22.86" rot="MR0"/>
-<instance part="M2" gate="G$1" x="113.03" y="34.29" rot="R180"/>
+<instance part="ENCODER" gate="G$1" x="91.44" y="-22.86" rot="MR0"/>
+<instance part="433HMZ_TX" gate="G$1" x="113.03" y="34.29" rot="R180"/>
 <instance part="SUPPLY1" gate="GND" x="-73.66" y="-30.48"/>
 <instance part="SUPPLY3" gate="GND" x="58.42" y="-53.34"/>
 <instance part="SUPPLY4" gate="GND" x="93.98" y="20.32"/>
@@ -7026,7 +7025,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <instance part="U$16" gate="G$1" x="25.4" y="-22.86"/>
 <instance part="ISP1" gate="G$1" x="0" y="-63.5"/>
 <instance part="SUPPLY2" gate="GND" x="15.24" y="-69.85"/>
-<instance part="JP1" gate="G$1" x="-105.41" y="30.48" rot="R180"/>
+<instance part="BATTERY" gate="G$1" x="-105.41" y="30.48" rot="R180"/>
 <instance part="P+4" gate="1" x="91.44" y="13.97"/>
 <instance part="P+6" gate="1" x="33.02" y="-6.35"/>
 <instance part="FRAME1" gate="G$1" x="-121.92" y="-119.38"/>
@@ -7062,13 +7061,13 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="-81.28" y1="27.94" x2="-81.28" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="41.91" x2="-81.28" y2="41.91" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A1" pin="GND"/>
+<pinref part="V_REG_5" gate="A1" pin="GND"/>
 <wire x1="-81.28" y1="44.45" x2="-81.28" y2="41.91" width="0.1524" layer="91"/>
 <junction x="-81.28" y="41.91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-68.58" y1="41.91" x2="-81.28" y2="41.91" width="0.1524" layer="91"/>
 <junction x="-81.28" y="41.91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="BATTERY" gate="G$1" pin="1"/>
 <wire x1="-102.87" y1="27.94" x2="-81.28" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-81.28" y="27.94"/>
 </segment>
@@ -7080,17 +7079,17 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="-53.34" y1="-20.32" x2="-53.34" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-27.94" x2="-73.66" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="-73.66" y="-27.94"/>
-<pinref part="U1" gate="G$1" pin="GND@1"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="GND@1"/>
 <wire x1="-22.86" y1="-27.94" x2="-53.34" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="-53.34" y="-27.94"/>
-<pinref part="U1" gate="G$1" pin="GND@2"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="GND@2"/>
 <wire x1="-22.86" y1="-30.48" x2="-53.34" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-30.48" x2="-53.34" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <wire x1="58.42" y1="-20.32" x2="58.42" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="TE"/>
+<pinref part="ENCODER" gate="G$1" pin="TE"/>
 <wire x1="73.66" y1="-20.32" x2="58.42" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7100,7 +7099,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="15.24" y1="-67.31" x2="15.24" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="GND"/>
+<pinref part="V_REG_3.3" gate="G$1" pin="GND"/>
 <wire x1="54.61" y1="29.21" x2="54.61" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="41.91" y1="30.48" x2="41.91" y2="25.4" width="0.1524" layer="91"/>
@@ -7112,7 +7111,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="67.31" y1="25.4" x2="54.61" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="VSS"/>
+<pinref part="ENCODER" gate="G$1" pin="VSS"/>
 <wire x1="101.6" y1="-48.26" x2="101.6" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 </segment>
@@ -7144,11 +7143,11 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="86.36" y1="22.86" x2="93.98" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="22.86" x2="93.98" y2="31.75" width="0.1524" layer="91"/>
 <junction x="93.98" y="22.86"/>
-<pinref part="M2" gate="G$1" pin="GND"/>
+<pinref part="433HMZ_TX" gate="G$1" pin="GND"/>
 <wire x1="93.98" y1="31.75" x2="95.25" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="A0"/>
+<pinref part="ENCODER" gate="G$1" pin="A0"/>
 <wire x1="109.22" y1="-15.24" x2="111.76" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-15.24" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-17.78" x2="111.76" y2="-20.32" width="0.1524" layer="91"/>
@@ -7158,25 +7157,25 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="111.76" y1="-27.94" x2="111.76" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-30.48" x2="111.76" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="-33.02" x2="111.76" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="A1"/>
+<pinref part="ENCODER" gate="G$1" pin="A1"/>
 <wire x1="109.22" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="111.76" y="-17.78"/>
-<pinref part="IC3" gate="G$1" pin="A2"/>
+<pinref part="ENCODER" gate="G$1" pin="A2"/>
 <wire x1="109.22" y1="-20.32" x2="111.76" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="111.76" y="-20.32"/>
-<pinref part="IC3" gate="G$1" pin="A3"/>
+<pinref part="ENCODER" gate="G$1" pin="A3"/>
 <wire x1="109.22" y1="-22.86" x2="111.76" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="111.76" y="-22.86"/>
-<pinref part="IC3" gate="G$1" pin="A4"/>
+<pinref part="ENCODER" gate="G$1" pin="A4"/>
 <wire x1="109.22" y1="-25.4" x2="111.76" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="111.76" y="-25.4"/>
-<pinref part="IC3" gate="G$1" pin="A5"/>
+<pinref part="ENCODER" gate="G$1" pin="A5"/>
 <wire x1="109.22" y1="-27.94" x2="111.76" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="111.76" y="-27.94"/>
-<pinref part="IC3" gate="G$1" pin="A6"/>
+<pinref part="ENCODER" gate="G$1" pin="A6"/>
 <wire x1="109.22" y1="-30.48" x2="111.76" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="111.76" y="-30.48"/>
-<pinref part="IC3" gate="G$1" pin="A7"/>
+<pinref part="ENCODER" gate="G$1" pin="A7"/>
 <wire x1="109.22" y1="-33.02" x2="111.76" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="111.76" y="-33.02"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
@@ -7199,10 +7198,10 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-43.18" y1="25.4" x2="-34.29" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-43.18" y="25.4"/>
-<pinref part="U1" gate="G$1" pin="AVCC"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="AVCC"/>
 <wire x1="-22.86" y1="20.32" x2="-43.18" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-43.18" y="20.32"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="VCC"/>
 <wire x1="-43.18" y1="17.78" x2="-22.86" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-43.18" y="17.78"/>
 <pinref part="C11" gate="G$1" pin="1"/>
@@ -7214,7 +7213,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="A1" pin="VO"/>
+<pinref part="V_REG_5" gate="A1" pin="VO"/>
 <wire x1="-68.58" y1="49.53" x2="-68.58" y2="52.07" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="52.07" x2="-68.58" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
@@ -7222,7 +7221,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <junction x="-68.58" y="49.53"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="VIN"/>
+<pinref part="V_REG_3.3" gate="G$1" pin="VIN"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="67.31" y1="41.91" x2="67.31" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
@@ -7230,7 +7229,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <junction x="67.31" y="41.91"/>
 </segment>
 <segment>
-<pinref part="M2" gate="G$1" pin="VCC"/>
+<pinref part="433HMZ_TX" gate="G$1" pin="VCC"/>
 <wire x1="91.44" y1="34.29" x2="95.25" y2="34.29" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
 <wire x1="91.44" y1="54.61" x2="91.44" y2="34.29" width="0.1524" layer="91"/>
@@ -7245,7 +7244,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="91.44" y1="11.43" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="2.54" x2="111.76" y2="2.54" width="0.1524" layer="91"/>
 <junction x="91.44" y="2.54"/>
-<pinref part="IC3" gate="G$1" pin="VDD"/>
+<pinref part="ENCODER" gate="G$1" pin="VDD"/>
 <wire x1="91.44" y1="0" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7262,7 +7261,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <label x="-20.32" y="-66.04" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-24.13" y1="25.4" x2="-24.13" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PC6(/RESET)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PC6(/RESET)"/>
 <wire x1="-24.13" y1="25.4" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-24.13" y="25.4"/>
 </segment>
@@ -7270,16 +7269,18 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <net name="VCC" class="1">
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="A1" pin="VI"/>
+<pinref part="V_REG_5" gate="A1" pin="VI"/>
 <wire x1="-101.6" y1="49.53" x2="-101.6" y2="52.07" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="52.07" x2="-91.44" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="-101.6" y1="55.88" x2="-101.6" y2="52.07" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="55.88" x2="-101.6" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-101.6" y="52.07"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="-102.87" y1="30.48" x2="-110.49" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-110.49" y1="30.48" x2="-110.49" y2="52.07" width="0.1524" layer="91"/>
-<wire x1="-110.49" y1="52.07" x2="-101.6" y2="52.07" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="53.34" x2="-101.6" y2="52.07" width="0.1524" layer="91"/>
+<pinref part="BATTERY" gate="G$1" pin="2"/>
+<wire x1="-102.87" y1="30.48" x2="-111.76" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="30.48" x2="-111.76" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="53.34" x2="-101.6" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-101.6" y="53.34"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7292,7 +7293,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="-53.34" y1="1.27" x2="-48.26" y2="1.27" width="0.1524" layer="91"/>
 <junction x="-53.34" y="1.27"/>
 <wire x1="-48.26" y1="1.27" x2="-48.26" y2="0" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PB6(XTAL1/TOSC1)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PB6(XTAL1/TOSC1)"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
 <wire x1="-48.26" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="-10.16" x2="-73.66" y2="-10.16" width="0.1524" layer="91"/>
@@ -7308,7 +7309,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="-53.34" y1="-10.16" x2="-53.34" y2="-8.89" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-10.16" x2="-60.96" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-53.34" y="-10.16"/>
-<pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
 <wire x1="-22.86" y1="-5.08" x2="-48.26" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-5.08" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-10.16" x2="-53.34" y2="-10.16" width="0.1524" layer="91"/>
@@ -7316,7 +7317,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="OSC1"/>
+<pinref part="ENCODER" gate="G$1" pin="OSC1"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="-48.26" x2="81.28" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
@@ -7324,7 +7325,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <net name="N$6" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="IC3" gate="G$1" pin="OSC2"/>
+<pinref part="ENCODER" gate="G$1" pin="OSC2"/>
 <wire x1="91.44" y1="-53.34" x2="93.98" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="-53.34" x2="93.98" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
@@ -7333,14 +7334,14 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <segment>
 <pinref part="ADXL335" gate="A" pin="3"/>
 <wire x1="50.8" y1="-7.62" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PC1(ADC1)"/>
 <wire x1="25.4" y1="22.86" x2="40.64" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="22.86" x2="40.64" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AD08" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PB5(SCK)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PB5(SCK)"/>
 <pinref part="ISP1" gate="G$1" pin="SCK"/>
 <wire x1="73.66" y1="-33.02" x2="30.48" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-33.02" x2="25.4" y2="-33.02" width="0.1524" layer="91"/>
@@ -7349,14 +7350,14 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <wire x1="-15.24" y1="-44.45" x2="30.48" y2="-44.45" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-44.45" x2="30.48" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="30.48" y="-33.02"/>
-<pinref part="IC3" gate="G$1" pin="AD8"/>
+<pinref part="ENCODER" gate="G$1" pin="AD8"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PB2(SS/OC1B)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PB2(SS/OC1B)"/>
 <wire x1="63.5" y1="-25.4" x2="60.96" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="AD11"/>
+<pinref part="ENCODER" gate="G$1" pin="AD11"/>
 <wire x1="60.96" y1="-25.4" x2="25.4" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-25.4" x2="73.66" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
@@ -7365,13 +7366,13 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <segment>
 <pinref part="ISP1" gate="G$1" pin="MOSI"/>
 <wire x1="15.24" y1="-63.5" x2="35.56" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PB3(MOSI/OC2)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PB3(MOSI/OC2)"/>
 <wire x1="66.04" y1="-27.94" x2="64.77" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="64.77" y1="-27.94" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-63.5" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="35.56" y="-27.94"/>
-<pinref part="IC3" gate="G$1" pin="AD10"/>
+<pinref part="ENCODER" gate="G$1" pin="AD10"/>
 <wire x1="66.04" y1="-27.94" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7380,17 +7381,17 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <pinref part="ISP1" gate="G$1" pin="MISO"/>
 <wire x1="-12.7" y1="-60.96" x2="-12.7" y2="-46.99" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="-46.99" x2="33.02" y2="-46.99" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PB4(MISO)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PB4(MISO)"/>
 <wire x1="73.66" y1="-30.48" x2="33.02" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-30.48" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-46.99" x2="33.02" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="33.02" y="-30.48"/>
-<pinref part="IC3" gate="G$1" pin="AD9"/>
+<pinref part="ENCODER" gate="G$1" pin="AD9"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="PC0(ADC0)"/>
 <wire x1="35.56" y1="25.4" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="ADXL335" gate="A" pin="4"/>
 <wire x1="50.8" y1="-10.16" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
@@ -7399,22 +7400,22 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="DOUT"/>
-<pinref part="M2" gate="G$1" pin="ATAD"/>
+<pinref part="ENCODER" gate="G$1" pin="DOUT"/>
+<pinref part="433HMZ_TX" gate="G$1" pin="ATAD"/>
 <wire x1="95.25" y1="36.83" x2="73.66" y2="36.83" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="36.83" x2="73.66" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="VOUT"/>
+<pinref part="V_REG_3.3" gate="G$1" pin="VOUT"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="41.91" y1="41.91" x2="41.91" y2="38.1" width="0.1524" layer="91"/>
 <junction x="41.91" y="41.91"/>
 <junction x="41.91" y="41.91"/>
 <wire x1="-38.1" y1="41.91" x2="41.91" y2="41.91" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="41.91" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="AREF"/>
+<pinref part="ATMEGA_328" gate="G$1" pin="AREF"/>
 <wire x1="-38.1" y1="22.86" x2="-38.1" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="10.16" x2="-22.86" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
@@ -7426,9 +7427,24 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,101.6,-48.26,VSS,GND,,,,"/>
+<approved hash="102,1,73.66,-20.32,TE,GND,,,,"/>
+<approved hash="104,1,91.44,0,ENCODER,VDD,+5V,,,"/>
+<approved hash="104,1,95.25,34.29,433HMZ_TX,VCC,+5V,,,"/>
+<approved hash="104,1,15.24,-60.96,ISP1,VCC,+5V,,,"/>
+<approved hash="108,1,15.24,-67.31,GND,,,,,"/>
+<approved hash="113,1,52.4348,-7.39394,ADXL335,,,,,"/>
+<approved hash="113,1,-104.808,27.7139,BATTERY,,,,,"/>
+<approved hash="113,1,17.676,-11.534,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
